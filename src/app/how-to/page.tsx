@@ -70,7 +70,7 @@ export default function HowToPage() {
                 Warum als App installieren?
               </CardTitle>
               <CardDescription>
-                Nutze das Headquarter RWS2 wie eine echte App direkt von deinem Home Screen.
+                Nutze das Headquarter RWS1 wie eine echte App direkt von deinem Home Screen.
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-6 space-y-3">

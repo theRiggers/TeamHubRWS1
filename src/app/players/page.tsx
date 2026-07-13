@@ -142,7 +142,7 @@ export default function PlayersPage() {
 
     const dateStr = format(new Date(), 'dd.MM.yyyy', { locale: de });
     const title = type === 'drinks' ? 'Bierliste' : type === 'treasury' ? 'Mannschaftskasse' : 'Offene Schulden';
-    let text = `🍻 *${title} - RWS2*\n(Stand: ${dateStr})\n\n`;
+    let text = `🍻 *${title} - RWS1*\n(Stand: ${dateStr})\n\n`;
 
     debtors.sort((a, b) => ((a.balance || 0) + getFullTreasuryBalance(a)) - ((b.balance || 0) + getFullTreasuryBalance(b))).forEach(p => {
       const tb = getFullTreasuryBalance(p);

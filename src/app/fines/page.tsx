@@ -47,7 +47,7 @@ export default function FinesPage() {
   const exportFinesList = () => {
     if (unpaidFines.length === 0) return;
     const dateStr = format(new Date(), 'dd.MM.yyyy', { locale: de });
-    let text = `⚖️ *Offene Strafen - RWS2*\n(Stand: ${dateStr})\n\n`;
+    let text = `⚖️ *Offene Strafen - RWS1*\n(Stand: ${dateStr})\n\n`;
     const playerFines: Record<string, Fine[]> = {};
     unpaidFines.forEach(f => {
       if (!playerFines[f.playerName]) playerFines[f.playerName] = [];

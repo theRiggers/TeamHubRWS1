@@ -66,7 +66,7 @@ export function Sidebar({ userRoles = ['player'] }: SidebarProps) {
           <div className="relative h-10 w-10 flex-shrink-0">
             <Image src="/logo.png" alt="RW Sutthausen" fill className="object-contain" priority />
           </div>
-          <span className="text-xl font-bold font-headline text-primary">Headquarter RWS2</span>
+          <span className="text-xl font-bold font-headline text-primary">Headquarter RWS1</span>
         </Link>
       </div>
       
@@ -150,7 +150,7 @@ export function MobileNavTrigger({ userRoles = ['player'], rightElement }: { use
             <SheetContent side="left" className="p-0 w-72 bg-sidebar">
               <SheetHeader className="sr-only">
                 <SheetTitle>Navigation</SheetTitle>
-                <SheetDescription>Hauptmenü Headquarter RWS2</SheetDescription>
+                <SheetDescription>Hauptmenü Headquarter RWS1</SheetDescription>
               </SheetHeader>
               <div className="flex flex-col h-full">
                 <div className="flex h-auto min-16 items-center px-6 border-b border-sidebar-border pt-safe-top">
@@ -158,7 +158,7 @@ export function MobileNavTrigger({ userRoles = ['player'], rightElement }: { use
                     <div className="relative h-8 w-8">
                       <Image src="/logo.png" alt="Logo" fill className="object-contain" />
                     </div>
-                    <span className="text-xl font-bold font-headline text-primary">Headquarter RWS2</span>
+                    <span className="text-xl font-bold font-headline text-primary">Headquarter RWS1</span>
                   </Link>
                 </div>
                 <div className="flex-1 overflow-y-auto py-6 px-4 space-y-1">
@@ -205,7 +205,7 @@ export function MobileNavTrigger({ userRoles = ['player'], rightElement }: { use
             <div className="relative h-6 w-6">
               <Image src="/logo.png" alt="RW Sutthausen" fill className="object-contain" />
             </div>
-            <span className="font-bold text-lg text-primary">Headquarter RWS2</span>
+            <span className="font-bold text-lg text-primary">Headquarter RWS1</span>
           </Link>
         </div>
         <div className="flex items-center">{rightElement}</div>

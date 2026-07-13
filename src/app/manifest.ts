@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Headquarter RWS2',
+    name: 'Headquarter RWS1',
     short_name: 'Headquarter',
-    description: 'Teamverwaltung für die Mannschaft RWS2',
+    description: 'Teamverwaltung für die Mannschaft RWS1',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

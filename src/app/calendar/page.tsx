@@ -90,7 +90,7 @@ export default function CalendarPage() {
       toast({ variant: "destructive", title: "Keine Termine", description: "Es gibt keine anstehenden Termine zum Exportieren." })
       return;
     }
-    downloadIcsFile(upcomingEvents, 'rws2-kalender.ics')
+    downloadIcsFile(upcomingEvents, 'RWS1-kalender.ics')
     toast({ title: "Export gestartet", description: "Die Kalender-Datei wird heruntergeladen." })
   }
 

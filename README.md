@@ -1,4 +1,4 @@
-# Headquarter RWS2 🍻
+# Headquarter RWS1 🍻
 
 Die digitale Getränkekasse und Teamverwaltung für RW Sutthausen.
 
@@ -24,7 +24,7 @@ GitHub verlangt ein **Token** statt deines Passworts.
 1. Erstelle ein Token unter [GitHub Settings > Tokens (classic)](https://github.com/settings/tokens).
 2. Setze das Häkchen bei **`repo`**.
 3. Nutze diesen Befehl im Terminal (ersetze `DEIN_TOKEN`):
-   `git remote set-url origin https://DEIN_TOKEN@github.com/theRiggers/Bierliste-RWS2.git`
+   `git remote set-url origin https://DEIN_TOKEN@github.com/theRiggers/Bierliste-RWS1.git`
 4. Danach klappt `git push` ohne Passwortabfrage.
 
 ## 🌍 Hosting

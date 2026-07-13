@@ -233,9 +233,9 @@ export default function TickerPage() {
                       <SelectTrigger className="h-11 rounded-xl"><SelectValue /></SelectTrigger>
                       <SelectContent>
                         <SelectItem value="comment">Kommentar</SelectItem>
-                        <SelectItem value="goal">Tor RWS2 (+1)</SelectItem>
+                        <SelectItem value="goal">Tor RWS1 (+1)</SelectItem>
                         <SelectItem value="goal_opponent">Gegner-Tor (+1)</SelectItem>
-                        <SelectItem value="sub">Wechsel RWS2</SelectItem>
+                        <SelectItem value="sub">Wechsel RWS1</SelectItem>
                         <SelectItem value="status">Spielstatus (Anpfiff, Pause...)</SelectItem>
                       </SelectContent>
                     </Select>

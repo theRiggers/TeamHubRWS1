@@ -116,7 +116,7 @@ export function IntroDialog() {
               Moin {currentUserProfile.name.split(' ')[0]}!
             </DialogTitle>
             <DialogDescription className="text-white/80 text-lg">
-              Willkommen im Headquarter RWS2. Hier ist ein Überblick über deine Funktionen.
+              Willkommen im Headquarter RWS1. Hier ist ein Überblick über deine Funktionen.
             </DialogDescription>
           </DialogHeader>
         </div>

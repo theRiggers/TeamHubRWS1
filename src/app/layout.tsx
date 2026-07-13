@@ -14,12 +14,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Headquarter RWS2',
+  title: 'Headquarter RWS1',
   description: 'Verwalte deine Fußballmannschaft effizient und smart.',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'Headquarter RWS2',
+    title: 'Headquarter RWS1',
   },
   formatDetection: {
     telephone: false,
