@@ -1,0 +1,91 @@
+{
+  "entities": {
+    "Player": {
+      "title": "Player",
+      "description": "Benutzerprofil mit Kontoständen und Rollen.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "roles": { "type": "array", "items": { "type": "string" } },
+        "balance": { "type": "number" },
+        "treasuryBalance": { "type": "number" },
+        "isFeeExempt": { "type": "boolean" },
+        "lastIntroSeenRoles": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "Expense": {
+      "title": "Expense",
+      "description": "Datensatz über ein konsumiertes Getränk.",
+      "type": "object",
+      "properties": {
+        "playerId": { "type": "string" },
+        "playerName": { "type": "string" },
+        "itemType": { "type": "string", "enum": ["beer", "crate"] },
+        "cost": { "type": "number" },
+        "date": { "type": "string", "format": "date-time" }
+      }
+    },
+    "Payment": {
+      "title": "Payment",
+      "description": "Einzahlung auf das Getränkekonto.",
+      "type": "object",
+      "properties": {
+        "playerId": { "type": "string" },
+        "playerName": { "type": "string" },
+        "amount": { "type": "number" },
+        "date": { "type": "string", "format": "date-time" },
+        "recordedBy": { "type": "string" }
+      }
+    },
+    "MembershipFee": {
+      "title": "MembershipFee",
+      "description": "Gezahlter Monats- oder Jahresbeitrag.",
+      "type": "object",
+      "properties": {
+        "playerId": { "type": "string" },
+        "type": { "type": "string", "enum": ["monthly", "annual"] },
+        "month": { "type": "number" },
+        "year": { "type": "number" },
+        "amount": { "type": "number" },
+        "datePaid": { "type": "string", "format": "date-time" }
+      }
+    },
+    "Fine": {
+      "title": "Fine",
+      "description": "Eingetragene Strafe aus dem Katalog.",
+      "type": "object",
+      "properties": {
+        "playerId": { "type": "string" },
+        "playerName": { "type": "string" },
+        "reason": { "type": "string" },
+        "amount": { "type": "number" },
+        "date": { "type": "string", "format": "date-time" },
+        "isPaid": { "type": "boolean" }
+      }
+    },
+    "TeamEvent": {
+      "title": "TeamEvent",
+      "description": "Termin wie Training oder Spiel.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "type": { "type": "string", "enum": ["training", "match", "social"] },
+        "date": { "type": "string", "format": "date-time" },
+        "location": { "type": "string" }
+      }
+    }
+  },
+  "auth": {
+    "providers": ["google.com", "password"]
+  },
+  "firestore": {
+    "/players/{playerId}": { "schema": { "$ref": "#/backend/entities/Player" }, "description": "Profile." },
+    "/expenses/{id}": { "schema": { "$ref": "#/backend/entities/Expense" }, "description": "Getränke." },
+    "/payments/{id}": { "schema": { "$ref": "#/backend/entities/Payment" }, "description": "Zahlungen." },
+    "/membershipFees/{id}": { "schema": { "$ref": "#/backend/entities/MembershipFee" }, "description": "Beiträge." },
+    "/fines/{id}": { "schema": { "$ref": "#/backend/entities/Fine" }, "description": "Strafen." },
+    "/teamEvents/{id}": { "schema": { "$ref": "#/backend/entities/TeamEvent" }, "description": "Termine." },
+    "/settings/global": { "schema": { "type": "object" }, "description": "Globale Preise." }
+  }
+}
